@@ -332,3 +332,54 @@ for linha in matriz:
 
 distancia = max(abs(A-C), abs(B-D))
 print("A distância entre o agente e o procurado é:", distancia)
+
+print("=-=-=-=-=")
+print("TURTLE")
+print("=-=-=-=-=")
+
+import turtle as t
+t.bgcolor("black")
+t.pensize(5)
+t.speed(1)
+t.color("white")
+t.begin_fill()
+t.fillcolor("white")
+t.left(150)
+t.forward(180)
+t.circle(-90,180)
+t.setheading(60)
+t.circle(-90,180)
+t.forward(180)
+t.end_fill()
+t.hideturtle()
+msg = ("   FELIZ DIA DO ESTUDANTE")
+t.write(msg,move=True,align="Left")
+font=("Arial",40,"italic","bold")
+t.done()
+
+print("=-=-=-=-=")
+print("PYGAME")
+print("=-=-=-=-=")
+
+import pygame
+from sys import exit
+
+def load(x):
+    while True:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                exit()
+        screen.blit(x,(0, 0))
+        screen.blit(x,(200,400))
+        pygame.display.update()
+
+pygame.init()
+screen = pygame.display.set_mode((800, 400))
+pygame.display.set_caption('Firefly')
+
+test_surface = pygame.Surface((400, 400))
+test_surface.fill('Yellow')
+x = test_surface
+load(x)
+
