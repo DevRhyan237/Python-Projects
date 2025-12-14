@@ -1,3 +1,5 @@
+import math
+
 print("=-=-=-=-=")
 print("EXERCICIO DISTANCIA EUCLIDIANA")
 print("=-=-=-=-=")
