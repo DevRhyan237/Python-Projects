@@ -1,0 +1,91 @@
+print(=-=-=-=-=)
+print("HOTEL RHYAN")
+print(=-=-=-=-=
+
+#RESTAURANTE:
+
+def cardápio1():
+    print('OPCOES PRO CAFE:')
+    print('1 - Pão Integral')
+    print('2 - Chá')
+    print('3 - Café Mellita')
+    café = int(input('Informe sua opção'))
+    return café
+
+def cardápio2():
+    print('OPCOES PRO ALMOCO:')
+    print('1 - Arroz Integral com Salada')
+    print('2 - Suco de Laranja do Pé')
+    print('3 - Feijoada')
+    almoço = int(input('Informe sua opção'))
+    return almoço
+
+def cardápio3():
+    print('OPCOES PRA JANTA')
+    print('1 - Gelatina ')
+    print('2 - Galinha Assada')
+    print('3 - Prato Fitness')
+    janta = int(input('Informe sua opção'))
+    return janta
+
+#main
+
+print('Café')
+print('Almoço')
+print('Janta')
+information = input('INFORME SEU CARDAPIO')
+
+
+if information.lower().strip() == 'café':
+
+    opção1 = cardápio1()
+
+    if opção1 == 1:
+        print('O valor é de R$ 15,00. Bom proveito!')
+
+    elif opção1 == 2:
+        print('O valor é de R$ 3,00. Bom proveito!')
+
+    elif opção1 == 3:
+        print('O valor é de R$ 5,00. Bom proveito!')
+
+    else:
+        print('Opção inválida. Tente Novamente!')
+        exit()
+
+elif information.lower().strip() == 'almoço':
+
+    opção2 = cardápio2()
+
+    if opção2 == 1:
+        print('O valor é de R$ 15,00. Bom proveito!')
+
+    elif opção2 == 2:
+        print('O valor é de R$ 3,00. Bom proveito!')
+
+    elif opção2 == 3:
+        print('O valor é de R$ 5,00. Bom proveito!')
+
+    else:
+        print('Opção Inválida. Tente Novamente!')
+        exit()
+
+elif information.lower().strip() == 'janta':
+
+    opção3 = cardápio3()
+
+    if opção3 == 1:
+        print('O valor é de R$ 15,00. Bom proveito!')
+
+    elif opção3 == 2:
+        print('O valor é de R$ 3,00. Bom proveito!')
+
+    elif opção3 == 3:
+        print('O valor é de R$ 5,00. Bom proveito!')
+
+    else:
+        print('Opção Inválida. Tente Novamente!')
+
+else:
+    print('Inválido')
+    exit()
